@@ -1,17 +1,20 @@
 import 'package:flutter/material.dart';
 
+import 'screens/home/page/home.dart';
+
 void main() {
-  runApp(const FirebaseEcom());
+  runApp(const FreebeesEcom());
 }
 
-class FirebaseEcom extends StatelessWidget {
-  const FirebaseEcom({super.key});
+class FreebeesEcom extends StatelessWidget {
+  const FreebeesEcom({super.key});
 
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: "Firebase E-Com",
+      title: 'Flutter Demo',
+      home: Home(),
     );
   }
 }

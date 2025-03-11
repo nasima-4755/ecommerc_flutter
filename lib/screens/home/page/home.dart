@@ -1,10 +1,6 @@
 import 'package:flutter/material.dart';
-
-class FColors {
-  static const primaryBlueOcean = Color(0xFF5CC936);
-  static const primaryOrangeFresh = Color(0xFFFFC120);
-  static const primaryNavyBlack = Color(0xFF0C1A30);
-}
+import 'package:icons_plus/icons_plus.dart';
+import 'package:lab07/utils/constants/color.dart';
 
 class Home extends StatelessWidget {
   const Home({super.key});
@@ -18,8 +14,12 @@ class Home extends StatelessWidget {
           style: TextStyle(
             fontFamily: "DMSans",
             fontWeight: FontWeight.w700,
+            color: FColors.oceanBlue,
           ),
         ),
+        actions: [
+          Icon(Iconsax.notification_bing_outline),
+        ],
         centerTitle: true,
       ),
     );
